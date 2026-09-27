@@ -1,0 +1,34 @@
+{
+  "name": "ModernAdmin",
+  "namespace": "ModernAdmin",
+  "version": "1.0.0.0",
+  "framework": "ext",
+  "toolkit": "modern",
+  "theme": "theme-material",
+  "requires": [
+    "modern"
+  ],
+  "id": "7f8b91a2-4c2e-49b8-b8cf-8d9e0f1a2b3c",
+  "js": [
+    {
+      "path": "app.js",
+      "bundle": true
+    }
+  ],
+  "css": [
+    {
+      "path": "resources/css/custom.css"
+    }
+  ],
+  "production": {
+    "output": {
+      "base": "${workspace.build.dir}/${build.environment}/${app.name}"
+    }
+  },
+  "bootstrap": {
+    "base": "${app.dir}",
+    "manifest": "${build.environment}.json",
+    "microloader": "bootstrap.js",
+    "css": "bootstrap.css"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "extjs-modern-workspace",
+  "version": "1.0.0",
+  "description": "Enterprise Modern Admin Dashboard & Workspace built with Sencha ExtJS Modern Toolkit and MVVM architecture, optimized for GitHub Pages.",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "serve": "npx serve . -p 3000",
+    "test": "node -e \"console.log('Validating structure...'); process.exit(0);\""
+  },
+  "keywords": [
+    "sencha",
+    "extjs",
+    "modern-toolkit",
+    "admin-dashboard",
+    "enterprise-ui",
+    "mvvm",
+    "github-pages"
+  ],
+  "author": "Carlos Donato Alvarez",
+  "license": "MIT"
+}

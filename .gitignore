@@ -1,0 +1,9 @@
+# Dependencies & Environment
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Sencha Cmd build output (if built locally)
+build/
+.sencha/

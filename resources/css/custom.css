@@ -1,0 +1,311 @@
+/* Modern Enterprise Workspace Custom Styling */
+:root {
+    --app-primary: #1976d2;
+    --app-primary-dark: #115293;
+    --app-accent: #00b0ff;
+    --app-bg: #f4f6f9;
+    --app-surface: #ffffff;
+    --app-border: #e0e4e8;
+    --app-text: #212529;
+    --app-text-muted: #6c757d;
+    --app-sidebar-bg: #1a222d;
+    --app-sidebar-text: #b8c7ce;
+    --app-sidebar-active: #222d3c;
+    --app-success: #10b981;
+    --app-warning: #f59e0b;
+    --app-danger: #ef4444;
+}
+
+body.dark-theme {
+    --app-bg: #0f172a;
+    --app-surface: #1e293b;
+    --app-border: #334155;
+    --app-text: #f8fafc;
+    --app-text-muted: #94a3b8;
+    --app-sidebar-bg: #0a0f1d;
+    --app-sidebar-text: #94a3b8;
+    --app-sidebar-active: #1e293b;
+}
+
+body {
+    background-color: var(--app-bg) !important;
+    color: var(--app-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Sidebar Styling */
+.app-sidebar {
+    background-color: var(--app-sidebar-bg) !important;
+    border-right: 1px solid var(--app-border);
+}
+
+.sidebar-header {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-logo {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #1976d2, #00b0ff);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.sidebar-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.nav-item {
+    color: var(--app-sidebar-text) !important;
+    padding: 12px 16px !important;
+    border-radius: 6px;
+    margin: 4px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    color: #ffffff !important;
+}
+
+.nav-item.active {
+    background-color: var(--app-primary) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* Top App Bar */
+.app-header {
+    background-color: var(--app-surface) !important;
+    border-bottom: 1px solid var(--app-border) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.header-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--app-text) !important;
+}
+
+/* KPI Cards */
+.kpi-card {
+    background: var(--app-surface) !important;
+    border: 1px solid var(--app-border) !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.kpi-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    color: var(--app-text-muted);
+}
+
+.kpi-icon-box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.kpi-value {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--app-text);
+    margin-bottom: 8px;
+}
+
+.kpi-footer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.trend-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.trend-positive {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.trend-negative {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Status Badges in Grid */
+.status-pill {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.status-active {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.status-suspended {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+/* Compound Avatar Column */
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--app-border);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--app-text);
+    font-size: 13px;
+}
+
+.user-email {
+    font-size: 11px;
+    color: var(--app-text-muted);
+}
+
+/* Activity Stream */
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--app-border);
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.activity-content {
+    flex: 1;
+    font-size: 13px;
+}
+
+.activity-user {
+    font-weight: 600;
+    color: var(--app-text);
+}
+
+.activity-time {
+    font-size: 11px;
+    color: var(--app-text-muted);
+    margin-top: 2px;
+}
+
+/* SVG Chart Container */
+.chart-card {
+    background: var(--app-surface) !important;
+    border: 1px solid var(--app-border) !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--app-text);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+}
